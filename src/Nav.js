@@ -8,7 +8,7 @@ function Nav({colors}) {
       <nav>
         <h4>Please select a color</h4>
         {colors.map(color => (
-            <NavLink to={baseURL + color}>{color}</NavLink>
+            <NavLink className="NavLink" to={baseURL + color}>{color}</NavLink>
         ))}
       </nav>
   );
