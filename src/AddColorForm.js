@@ -12,12 +12,13 @@ function AddColorForm({addColor}) {
     const resetForm = () => {
         setFormData(INITIAL_STATE);
     }
+
     const handleClick = (e) => {
         e.preventDefault()
         addColor(formData.color)
         resetForm()
     }
-    
+
   return (
     <form onSubmit={handleClick}>
         <input 
